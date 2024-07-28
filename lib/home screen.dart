@@ -2,9 +2,10 @@
  import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:islami_c8/quran/quran.dart';
-import 'package:islami_c8/radio/radio.dart';
 import 'package:islami_c8/sebha/sebha.dart';
 import 'package:islami_c8/soura/soura.dart';
+
+import 'hadeath/hadeath.dart';
 
 class homescreen extends StatefulWidget{
  static const String routename ="homescreen";
@@ -38,15 +39,20 @@ int index=0;
             },
             items: [
 
-BottomNavigationBarItem(
+              BottomNavigationBarItem(
     backgroundColor: Theme.of(context).primaryColor ,
     icon: ImageIcon (AssetImage('assets/images/quran.png') ),label: "quran"),
-   BottomNavigationBarItem(    backgroundColor: Theme.of(context).primaryColor ,
-       icon: ImageIcon(AssetImage('assets/images/radio.png')),label: "radio"),
-   BottomNavigationBarItem(    backgroundColor: Theme.of(context).primaryColor ,
-       icon: ImageIcon(AssetImage('assets/images/quran2.png')),label: "sebha"),
-   BottomNavigationBarItem(    backgroundColor: Theme.of(context).primaryColor ,
-       icon: ImageIcon(AssetImage('assets/images/sebha.png')),label: "sura"),
+              BottomNavigationBarItem(    backgroundColor: Theme.of(context).primaryColor ,
+                  icon: ImageIcon(AssetImage('assets/images/quran2.png')),label: "hadeath"),
+              BottomNavigationBarItem(    backgroundColor: Theme.of(context).primaryColor ,
+       icon: ImageIcon(AssetImage('assets/images/sebha.png')),label: "sebha"),
+              BottomNavigationBarItem(    backgroundColor: Theme.of(context).primaryColor ,
+                  icon: ImageIcon(AssetImage('assets/images/radio.png')),label: "radio"),
+
+
+
+
+
 
 
 
@@ -60,7 +66,7 @@ body: tabs[index],
   }
 List<Widget>tabs=[
   quran(),
-  radio(),
+  hadeath(),
   sebha(),
   soura(),
 ];

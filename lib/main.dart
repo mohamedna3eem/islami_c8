@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:islami_c8/hadeath/Hadeath_route.dart';
 import 'package:islami_c8/home%20screen.dart';
 import 'package:islami_c8/quran/suradetails.dart';
 import 'package:islami_c8/splach%20screan.dart';
+
+import 'hadeath/hadeath_details.dart';
 
 void main() {
   runApp( MyApp());
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget{
           scaffoldBackgroundColor: Colors.transparent,
             bottomNavigationBarTheme:BottomNavigationBarThemeData(
               selectedItemColor: Colors.black,
-              unselectedItemColor: Colors.white,
+                unselectedItemColor: Colors.white,
             ) ,
           appBarTheme:AppBarTheme(
               iconTheme:IconThemeData(color: Colors.black) ,
@@ -29,10 +32,13 @@ class MyApp extends StatelessWidget{
       ) ),
 
 
+
       routes: {
         homescreen.routename:(buildContext)=>homescreen(),
         splashscreen.routename:(buildContext)=>splashscreen(),
         SuraDetails.routename:(buildContext)=>SuraDetails(),
+        hadeathDetails.routename:(buildContext)=>hadeathDetails(),
+
       },
 
 

@@ -19,7 +19,9 @@ class quran extends StatelessWidget {
 
     return Column(
           children: [
-            Image.asset('assets/images/Screenshot (1).png' ,alignment: Alignment.center,),
+            Expanded(
+                flex: 1,
+                child: Image.asset('assets/images/Screenshot (1).png' ,alignment: Alignment.center,)),
             Container(
               color: Theme.of(context).primaryColor,
               height: 2,
@@ -35,7 +37,9 @@ class quran extends StatelessWidget {
               margin: EdgeInsets.only(top: 1),
             ),
 
-            Expanded(child: ListView.separated(itemBuilder:
+            Expanded(
+                flex: 3,
+                child: ListView.separated(itemBuilder:
             (buildcontext,index){
               return  Versename(vesename[index],index);
 
