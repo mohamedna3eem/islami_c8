@@ -20,12 +20,12 @@ List<hadeath_data>ELHadeath=[];
    Expanded(flex: 1,
        child: Image.asset("assets/images/59253-quran-basmala-islamic-kufic-arabic-calligraphy-icon.png")),
        Container(
-         color: Theme.of(context).primaryColor,
+         color: Theme.of(context).accentColor,
          height: 2,
        ),
-       Text("Hadeath",style: TextStyle(fontSize: 29,),),
+       Text("Hadeath Name",style: Theme.of(context).textTheme.headline5,),
        Container(
-     color: Theme.of(context).primaryColor,
+     color: Theme.of(context).accentColor,
      height: 2,
    ),
 
@@ -41,7 +41,10 @@ List<hadeath_data>ELHadeath=[];
 
                  },
                separatorBuilder:(BuildContext, int){
-                 return Container(height: 2,color: Theme.of(context).primaryColor,);
+                 return Container(height: 1,
+                   width: double.infinity,
+                     margin: EdgeInsets.symmetric(horizontal: 25),
+                   color: Theme.of(context).accentColor,);
                } ,
                itemCount:ELHadeath.length )//[[
    ),

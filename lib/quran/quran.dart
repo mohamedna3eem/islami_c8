@@ -23,15 +23,15 @@ class quran extends StatelessWidget {
                 flex: 1,
                 child: Image.asset('assets/images/Screenshot (1).png' ,alignment: Alignment.center,)),
             Container(
-              color: Theme.of(context).primaryColor,
+              color: Theme.of(context).accentColor,
               height: 2,
               width: double.infinity,
               margin: EdgeInsets.only(bottom: 1),
             ),
-            Text("verse name" ,
-                style: TextStyle(fontSize: 25) ),
+            Text(" Sura name" ,
+                style: Theme.of(context).textTheme.headline5 ),
             Container(
-              color: Theme.of(context).primaryColor,
+              color: Theme.of(context).accentColor,
               height: 2,
               width: double.infinity,
               margin: EdgeInsets.only(top: 1),
@@ -47,7 +47,7 @@ class quran extends StatelessWidget {
 
       separatorBuilder:(buildcontext,index){
               return  Container(
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
                 height: 1,
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(horizontal: 25),

@@ -1,9 +1,9 @@
-
  import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:islami_c8/quran/quran.dart';
+import 'package:islami_c8/radio/soura.dart';
 import 'package:islami_c8/sebha/sebha.dart';
-import 'package:islami_c8/soura/soura.dart';
+import 'package:islami_c8/theaming/theame.dart';
 
 import 'hadeath/hadeath.dart';
 
@@ -22,7 +22,8 @@ int index=0;
     return Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/bg3.png'),
+            image: AssetImage(theame.thememood==ThemeMode.light?
+            "assets/images/bg3.png":"assets/images/darkbackground.png",),
  fit: BoxFit.fill         ),
         ),
 
@@ -68,6 +69,5 @@ List<Widget>tabs=[
   quran(),
   hadeath(),
   sebha(),
-  soura(),
-];
-}
+  radio(),
+];}

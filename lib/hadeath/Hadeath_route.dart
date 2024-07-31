@@ -23,7 +23,7 @@ Hadeath_Contant(this.hadeath1);
 alignment: Alignment.center,
         child: Text(
           hadeath1.title,
-          style: TextStyle(fontSize: 24),
+          style: Theme.of(context).textTheme.bodyText1,
         ),
 
 
