@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_c8/quran/VerseName.dart';
 import 'package:islami_c8/quran/suradetails.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class quran extends StatelessWidget {
   List<String>vesename=["الفاتحه","البقرة","آل عمران","النساء","المائدة","الأنعام","الأعراف","الأنفال","التوبة","يونس","هود"
     ,"يوسف","الرعد","إبراهيم","الحجر","النحل","الإسراء","الكهف","مريم","طه","الأنبياء","الحج","المؤمنون"
@@ -23,15 +24,15 @@ class quran extends StatelessWidget {
                 flex: 1,
                 child: Image.asset('assets/images/Screenshot (1).png' ,alignment: Alignment.center,)),
             Container(
-              color: Theme.of(context).primaryColor,
+              color: Theme.of(context).accentColor,
               height: 2,
               width: double.infinity,
               margin: EdgeInsets.only(bottom: 1),
             ),
-            Text("verse name" ,
-                style: TextStyle(fontSize: 25) ),
+            Text( AppLocalizations.of(context).sura_name ,
+                style: Theme.of(context).textTheme.headline5 ),
             Container(
-              color: Theme.of(context).primaryColor,
+              color: Theme.of(context).accentColor,
               height: 2,
               width: double.infinity,
               margin: EdgeInsets.only(top: 1),
@@ -47,7 +48,7 @@ class quran extends StatelessWidget {
 
       separatorBuilder:(buildcontext,index){
               return  Container(
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
                 height: 1,
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(horizontal: 25),

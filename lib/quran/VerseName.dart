@@ -16,7 +16,7 @@ class Versename extends StatelessWidget{
     },
       child: Container(
         alignment: Alignment.center,
-        child:Text(title,style: TextStyle(fontSize: 24),) ,
+        child:Text(title,style: Theme.of(context).textTheme.bodyText1,) ,
       ),
     );
   }

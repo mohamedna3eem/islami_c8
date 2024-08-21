@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
+import '../theaming/theame.dart';
 import 'Verse_style.dart';
 
 class SuraDetails extends StatefulWidget {
@@ -24,7 +24,8 @@ List<String>chaptercontent=[];
   return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/images/bg3.png'),
+            image: AssetImage( theame.thememood==ThemeMode.light?
+            "assets/images/bg3.png":"assets/images/darkbackground.png",),
             fit: BoxFit.fill         ),
       ),
 child: Scaffold(
@@ -47,7 +48,7 @@ child: Scaffold(
       ),
 
   ],),
-  appBar: AppBar(title: Text(arg.title),),
+  appBar: AppBar(title: Text(arg.title,style: Theme.of(context).textTheme.headline5,),),
 ),
 
 
