@@ -51,7 +51,7 @@ class theame{
       ),),
     textTheme: const TextTheme(
 
-      headline3: TextStyle( fontSize: 32, color:darkmaintext, ),//screan title
+      headline3: TextStyle( fontSize: 32, color:darkaccentcolor),//screan title
       headline5: TextStyle(fontSize: 28, color:Colors.white ),//sub headers
       bodyText1: TextStyle(fontSize: 25, color:Colors.white ),//body headers
       bodyText2: TextStyle(fontSize: 22, color:darkmaintext ),//body details

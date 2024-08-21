@@ -4,7 +4,8 @@ import 'package:islami_c8/quran/suradetails.dart';
 import 'package:islami_c8/splach%20screan.dart';
 import 'package:islami_c8/theaming/theame.dart';
 import 'hadeath/hadeath_details.dart';
-import '';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 void main() {
   runApp( MyApp());
 }
@@ -30,6 +31,18 @@ class MyApp extends StatelessWidget{
 
       },
 
+
+       localizationsDelegates :  [
+         AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('en'), // English
+        Locale('ar'), // arabic
+      ],
+      locale:  Locale('ar'),
 
     );
 

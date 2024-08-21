@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami_c8/hadeath/Hadeath_route.dart';
 import 'package:islami_c8/hadeath/hadeath_data_class.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class hadeath extends StatefulWidget {
   @override
   State<hadeath> createState() => _hadeathState();
@@ -23,7 +23,7 @@ List<hadeath_data>ELHadeath=[];
          color: Theme.of(context).accentColor,
          height: 2,
        ),
-       Text("Hadeath Name",style: Theme.of(context).textTheme.headline5,),
+       Text(AppLocalizations.of(context).hadeath_name,style: Theme.of(context).textTheme.headline5,),
        Container(
      color: Theme.of(context).accentColor,
      height: 2,
